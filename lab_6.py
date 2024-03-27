@@ -20,12 +20,16 @@ def zad_4(podstawa, ilosc):
     potegi = np.logspace(podstawa, 4, num=ilosc)
     print(potegi)
 
-
+def zad_5(n):
+    mat = np.arange(n)
+    mat_diag = np.diag(mat)
+    print("Zadanie 5:", '\n', mat_diag[::-1])
 
 def main():
     zad_1()
     zad_2()
     zad_3(5)
     zad_4(2, 4)
+    zad_5(5)
 
 main()
