@@ -9,11 +9,23 @@ def zad_1():
 def zad_2():
     floats = np.array([3.13, 15.15, 24.4])
     convert = floats.astype('int64')
-    print(convert.dtype)
+    print("Zadanie 2:", convert.dtype)
+
+def zad_3(n):
+    tab = np.arange(n*n)
+    tab = tab.reshape((n,n))
+    print("Zadanie 3:",'\n', tab)
+
+def zad_4(podstawa, ilosc):
+    potegi = np.logspace(podstawa, 4, num=ilosc)
+    print(potegi)
+
+
 
 def main():
     zad_1()
     zad_2()
-
+    zad_3(5)
+    zad_4(2, 4)
 
 main()
