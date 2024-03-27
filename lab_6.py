@@ -25,11 +25,24 @@ def zad_5(n):
     mat_diag = np.diag(mat)
     print("Zadanie 5:", '\n', mat_diag[::-1])
 
+def zad_6():
+    wyk = np.empty((7,7))
+    bartosh = "Bartosz"
+    wyk = np.array(list(bartosh))
+    print(wyk)
+
+def zad_7(n):
+    mat = np.arange(n*n)
+    mat_diag = np.diag(mat)
+    print(mat_diag)
+
 def main():
     zad_1()
     zad_2()
     zad_3(5)
     zad_4(2, 4)
     zad_5(5)
+    zad_6()
+    zad_7(3)
 
 main()
